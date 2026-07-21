@@ -2,17 +2,19 @@
 
 ## Identified Problem or Need
 
-Replace this text with a clearly stated problem or need that exists that your project will attempt to solve / fulfil.
+The end-user may be spending to much money on things and needs to be more organised and conditional with their money.
 
 
 ## End-User Requirements
 
-Replace this text with a description of your typical end-users and their specific needs / expectations / requirements.
+This system keeps track of money the user is spending monthly.
 
 
 ## Proposed Solution
 
-Replace this text with a brief statement about the system that you intend to create, including the key functionality it should have.
+This is an app that allows users to put money into multiple spending accounts to allow you to spend 
+a certain amount of money on different things and keep track of your money easily such as: an account 
+for groceries or an account for clothes etc.
 
 
 # Relevant Implications

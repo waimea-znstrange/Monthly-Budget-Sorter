@@ -2,12 +2,16 @@
 
 ## Project Description
 
-This is an app that allows users to
+The end-user may be spending to much money on things and needs to be more organised and conditional with their money.
+This is an app that allows users to put money into multiple spending accounts to allow you to spend 
+a certain amount of money on different things and keep track of your money easily such as: an account 
+for groceries or an account for clothes etc.
+This system keeps track of money the user is spending monthly.
 
 The app has the following key features:
-- Feature one
-- Feature two
-- Feature three
+- Feature one:    The user can create and put money into accounts
+- Feature two:    Allows the user an ability of sharing money equally between accounts
+- Feature three:  After a month all the money that isnt used goes into the savings account
 - ...
 
 
