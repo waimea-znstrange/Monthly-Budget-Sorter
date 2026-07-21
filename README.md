@@ -46,7 +46,8 @@ Test User 2:
 - [SQLite](https://sqlite.org/) for the database
 - [Jinja2](https://jinja.palletsprojects.com/templates/) for page templating
 
-*For easier reading, the docs are hosted as a [GH Pages site](https://waimea-znstrange.github.io/level-2-project/)*
+*For easier reading, the docs are hosted as a [GH Pages site](https://waimea-znstrange.github.io/Monthly-Budget-Sorter
+/)*
 
 
 ## Project Structure
