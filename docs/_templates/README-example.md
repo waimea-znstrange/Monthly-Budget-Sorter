@@ -1,8 +1,8 @@
-# ... Project
+# Monthly-Budget-Sorter Project
 
 ## Project Description
 
-This is an app that ...
+This is an app that allows users to
 
 The app has the following key features:
 - Feature one
