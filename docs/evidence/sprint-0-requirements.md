@@ -6,9 +6,11 @@ The end-user may be spending to much money on things and needs to be more organi
 
 
 ## End-User Requirements
+My End-User stated these three key requirements:
 
-This system keeps track of money the user is spending monthly.
-
+- Let you sort money into multiple spending accounts.
+- Keep track of money the user is spending monthly.
+- Easy to use and consistant
 
 ## Proposed Solution
 
@@ -37,31 +39,29 @@ language to my targeted age group. It will be accesible for the device that my u
 
 ## Functionality
 
-Funtionality is how well the website works and works in the way it is expected to.
+Funtionality is how well the website works and does so in the way it is expected to.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+Good funtionality eliminates frustration and helps keep trust with the users.
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
-
+all links, buttons and forms work correctly. pages, links, forms and buttons load quickly enough to keep users engaged.
 
 
 
 ## Usability
 
-Replace this text with a clear explanation of what the implication means.
+Good Usability means how easy the website is to use. Anyone should be able to pick it up and use it without too many implications.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+Good Usability will help users have super easy and full control over their money being spent.
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
-
+Can users avoid making mistakes, and recover easily if they make one. Back button, save icon. Let the user know whats happing at all time via loading screen/icons.
 
 
 
