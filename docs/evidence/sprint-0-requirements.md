@@ -65,31 +65,38 @@ Can users avoid making mistakes, and recover easily if they make one. Back butto
 
 
 
-## Accessibility
+## Aesthetics
 
-Replace this text with a clear explanation of what the implication means.
-
-### Relevance to the System
-
-Replace this text with an explanation of why the implication is relevant to this particular project.
-
-### Impact / Considerations
-
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
-
-
-
-
-## Privacy/Legal
-
-Replace this text with a clear explanation of what the implication means.
+The design and layout of the page. e.g. Colour, position (logo top left, nav at top, footer at bottom) and overall how clean the layout of the website is.
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+Good aesthetics looks attractive and will make the website more enjoyable.
 
 ### Impact / Considerations
 
+Choose a good colour palette to use throughout the website, position buttons and content in a accessable and pleasing way.
+
+
+
+
+## Social
+
+Does it misrepresent or stereotype any social group and or cause offence to any group of people?
+
+### Relevance to the System
+
+This website can be relevant and used by everyone over the age of 18. 
+
+### Impact / Considerations
+
+Avoid stereotypes in images, examples and wording. Review all my content to make sure it is respectful and inclusive to everyone.
+
+
+
+
+
+
+Replace this text with a clear explanation of what the implication means.
+Replace this text with an explanation of why the implication is relevant to this particular project.
 Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
-
-
