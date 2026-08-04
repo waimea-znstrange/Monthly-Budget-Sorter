@@ -4,7 +4,6 @@
 
 The end-user may be spending to much money on things and needs to be more organised and conditional with their money.
 
-
 ## End-User Requirements
 My End-User stated these three key requirements:
 
