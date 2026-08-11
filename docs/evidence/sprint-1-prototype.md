@@ -3,8 +3,6 @@
 
 ## Sprint Goals
 
-finish my prototype on penpot and put a screenshot of my database design on vsc
-
 Develop a design for the database and a UI prototype that simulates the key functionality of the system. Test and refine the UI so that it can serve as the model for the next phase of development in Sprint 2.
 
 ### Specific Goals
@@ -29,7 +27,7 @@ Develop a design for the database and a UI prototype that simulates the key func
 
 Replace this text with notes regarding the DB design.
 
-![DB Design](screenshots/placeholder.png)
+![DB_design](screenshots/DB_design.jpeg)
 
 
 ### Required Data Input
