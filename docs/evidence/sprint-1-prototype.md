@@ -19,28 +19,36 @@ Develop a design for the database and a UI prototype that simulates the key func
     - Key pages
     - User interactions and 'flow'
     - Page layouts / features
+    - Ask user for initial details or change
     - Colour palette
     - Etc.
 
 
 ## Initial Database Design
 
-Replace this text with notes regarding the DB design.
+Spending table with date, category id, name, and amount.
+Categories table with name, notes, and budget.
 
 ![DB_design](screenshots/DB_design.jpeg)
 
 
 ### Required Data Input
 
+The data will be obtained by the user inputting the amount of money they want to spend between the different accounts. The user will be able to click on a button where it takes them to a page where they can type in the amount of money they want ot put into the seperate accounts
+
 Replace this text with a description of what data will be input, and where / how it will be obtained.
 
 ### Required Data Output
+
+integers will be displayed when the user puts in money into the acounts or spends money. The system will reveal the saved money at the end of the month.
 
 Replace this text with a description of the outputs for the system - what types of data will be displayed?
 
 ### Required Data Processing
 
-Replace this text with a description of how the data will be processed to achieve the desired output(s) - any processes / formulae?
+The system will calculate the money that has been used and the money that hasn't been used throughout the month and give a final outpout at the end of the four weeks
+
+Replace this text with a description of how the data will be processed to achieve the desired output(s) - any processes / formula?
 
 
 ## UI 'Flow'
