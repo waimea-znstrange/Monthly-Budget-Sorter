@@ -24,6 +24,15 @@ Develop a design for the database and a UI prototype that simulates the key func
     - Etc.
 
 
+
+--text: #13140e;
+--background: #fafbf9;
+--primary: #95a073;
+--secondary: #a7c3ae;
+--accent: #88aea1;
+
+
+
 ## Initial Database Design
 
 Spending table with date, category id, name, and amount.
@@ -57,14 +66,18 @@ The first stage of prototyping was to explore how the UI might 'flow' between st
 
 This Figma demo shows the initial design for the UI 'flow':
 
-**FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT**
+![Alt text](screenshots/ui-flow.png)
+
+you can access the flow [here](https://design.penpot.app/#/view?file-id=81f57451-85cc-819d-8008-7fdbba0b2af0&page-id=81f57451-85cc-819d-8008-7fdbba0b2af1&section=interactions&frame-id=ec83d70e-a449-809c-8008-7fdbbeeb6762&index=0&share-id=3be9e5e1-190f-8090-8008-7ff767141af9)
 
 ### Testing
 
+I had a chat with my end user.
 Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
 
 ### Changes / Improvements
 
+My end user suggested to add an information button to help them know what is happening on each page of the website.
 Replace this text with notes any improvements you made as a result of the testing.
 
 *IMPROVED FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
