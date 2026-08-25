@@ -15,22 +15,22 @@
 #     SEED_DATA = "INSERT INTO name (...)" or None
 #----------------------------------------------------------------------------
 
-class NoteTable:
+class AccountTable:
 
-    NAME = "note"
+    NAME = "account"
 
     SCHEMA = """
         CREATE TABLE note (
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            title   TEXT NOT NULL,
-            body    TEXT,
-            pinned  INTEGER DEFAULT 0,
-            created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            date    TEXT NOT NULL,
+            category_id    TEXT,
+            name    TEXT,
+            amount  INTEGER,
         )
     """
 
     SEED_DATA = """
-        INSERT INTO note (title, pinned, body)
+        INSERT INTO account (name, category_id, amount)
         VALUES
             ("Welcome!",      1, "This is a demo application using Flask, Jinja and SQLite."),
             ("Shopping List", 0, "Milk\nBread\nEggs\nCheese"),
@@ -59,7 +59,7 @@ class NoteTable:
 #----------------------------------------------------------------------------
 
 TABLES = [
-    NoteTable,
+    AccountTable,
     # Add more tables here...
 ]
 

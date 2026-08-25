@@ -77,10 +77,12 @@ Replace this text with notes about what you did to test the UI flow and the outc
 
 ### Changes / Improvements
 
-My end user suggested to add an information button to help them know what is happening on each page of the website.
+My end user suggested to add an information button to help them know what is happening on each page of the website, aswell as a "Add Account" heading.
 Replace this text with notes any improvements you made as a result of the testing.
 
-*IMPROVED FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+![Alt text](screenshots/ui-flow-improve.png)
+
+you can acces the flow [here](https://design.penpot.app/#/view?file-id=3be9e5e1-190f-8090-8008-7e773a8dc7d8&page-id=3be9e5e1-190f-8090-8008-7e773a8dc7d9&section=interactions&index=0&share-id=c269caa0-e456-818c-8008-88e0f55efba2)
 
 
 ## Initial UI Prototype

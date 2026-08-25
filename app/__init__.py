@@ -1,6 +1,6 @@
 #===========================================================
-# PROJECT NAME HERE
-# By YOUR NAME HERE
+# Monthly-Budget-Sorter Project
+# By Zeb
 #===========================================================
 
 from flask import Flask, request, session, render_template, flash, redirect, send_file, make_response
@@ -21,18 +21,18 @@ app = Flask(__name__)
 #===========================================================
 
 #-----------------------------------------------------------
-# Home page - Show all notes
+# Home page - Show all accounts
 #-----------------------------------------------------------
-@app.get("/")
-def show_notes():
+@app.get("/accounts")
+def show_accounts():
     with connect_db() as db:
         sql = """
-            SELECT id, title, body, pinned, created
-            FROM note
-            ORDER BY pinned DESC, created DESC
+            SELECT id, date, category_id, name, amount
+            FROM account
+            ORDER BY name DESC
         """
         params = ()
-        notes = db.execute(sql, params).fetchall()
+        accounts = db.execute(sql, params).fetchall()
 
         flash("Test message")
         flash("Test SUCCESS message", "success")
@@ -40,7 +40,8 @@ def show_notes():
         flash("Test WARNING message", "warning")
         flash("Test ERROR message", "error")
 
-        return render_template("pages/note_list.jinja", notes=notes)
+        return render_template("pages/account_list.jinja", accounts=accounts)
+
 
 
 #===========================================================
