@@ -20,23 +20,21 @@ class AccountTable:
     NAME = "account"
 
     SCHEMA = """
-        CREATE TABLE note (
-            id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            date    TEXT NOT NULL,
-            category_id    TEXT,
+        CREATE TABLE account (
+            id      BIGINT,
+            date    TEXT,
+            category_id    INTEGER,
             name    TEXT,
-            amount  INTEGER,
+            amount  INTEGER
         )
     """
 
     SEED_DATA = """
         INSERT INTO account (name, category_id, amount)
         VALUES
-            ("Welcome!",      1, "This is a demo application using Flask, Jinja and SQLite."),
-            ("Shopping List", 0, "Milk\nBread\nEggs\nCheese"),
-            ("Meeting Notes", 0, "Discussed project timeline.\n\nAction items:\n- Review design\n- Update docs"),
-            ("Recipe: Pasta", 0, "Ingredients:\n- 500g pasta\n- Tomato sauce\n- Garlic\n\nCook pasta, add sauce, enjoy!"),
-            ("Important!",    1, "Remember to backup your database regularly.")
+            ("name",  1, "Groceries"),
+            ("category_id",  0, "category_id"),
+            ("amount",  0, "$200"),
     """
 
 # Add more table classes here...
