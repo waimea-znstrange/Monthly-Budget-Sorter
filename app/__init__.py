@@ -34,14 +34,47 @@ def show_accounts():
         params = ()
         accounts = db.execute(sql, params).fetchall()
 
-        flash("Test message")
-        flash("Test SUCCESS message", "success")
-        flash("Test INFO message", "info")
-        flash("Test WARNING message", "warning")
-        flash("Test ERROR message", "error")
+        # flash("Test message")
+        # flash("Test SUCCESS message", "success")
+        # flash("Test INFO message", "info")
+        # flash("Test WARNING message", "warning")
+        # flash("Test ERROR message", "error")
 
         return render_template("pages/account_list.jinja", accounts=accounts)
 
+
+#-----------------------------------------------------------
+# Timeline - Show timeline
+#-----------------------------------------------------------
+@app.get("/timeline")
+def show_timeline():
+    with connect_db() as db:
+        sql = """
+            SELECT id, date, category_id, name, amount
+            FROM account
+            ORDER BY name DESC
+        """
+        params = ()
+        accounts = db.execute(sql, params).fetchall()
+
+        return render_template("pages/timeline.jinja", accounts=accounts)
+
+
+#-----------------------------------------------------------
+# Add account - Add account page
+#-----------------------------------------------------------
+@app.get("/add_account")
+def add_account():
+    with connect_db() as db:
+        sql = """
+            SELECT id, date, category_id, name, amount
+            FROM account
+            ORDER BY name DESC
+        """
+        params = ()
+        accounts = db.execute(sql, params).fetchall()
+
+        return render_template("pages/add_account.jinja", accounts=accounts)
 
 
 #===========================================================

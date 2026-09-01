@@ -1,0 +1,38 @@
+{#=====================================================
+  Home page
+=====================================================#}
+
+{% extends 'pages/_base.jinja' %}
+
+
+{% block content %}
+
+    <h2>Timeline</h2>
+
+    <section id="timeline">
+
+        {% for account in accounts %}
+
+            <div class="timeline">
+
+                <header>
+                    <h3>{{ timeline.title }}</h3>
+                </header>
+
+                <p>{{ timeline.body | paragraphs }}</p>
+
+                <footer>
+                </footer>
+
+            </div>
+
+        {% else %}
+
+            <p>No Dates!</p>
+
+        {% endfor %}
+
+    </section>
+
+{% endblock %}
+

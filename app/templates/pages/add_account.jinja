@@ -1,0 +1,38 @@
+{#=====================================================
+  Home page
+=====================================================#}
+
+{% extends 'pages/_base.jinja' %}
+
+
+{% block content %}
+
+    <h2>Add Account</h2>
+
+    <section id="add_accounts">
+
+        {% for account in accounts %}
+
+            <div class="add_account">
+
+                <header>
+                    <h3>{{ add_account.title }}</h3>
+                </header>
+
+                <p>{{ add_account.body | paragraphs }}</p>
+
+                <footer>
+                </footer>
+
+            </div>
+
+        {% else %}
+
+            <p>No Accounts!</p>
+
+        {% endfor %}
+
+    </section>
+
+{% endblock %}
+

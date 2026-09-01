@@ -34,7 +34,7 @@ class AccountTable:
         VALUES
             ("name",  1, "Groceries"),
             ("category_id",  0, "category_id"),
-            ("amount",  0, "$200"),
+            ("amount",  0, "$200")
     """
 
 # Add more table classes here...
