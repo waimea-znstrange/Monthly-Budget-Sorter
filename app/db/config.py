@@ -32,9 +32,9 @@ class AccountTable:
     SEED_DATA = """
         INSERT INTO account (name, category_id, amount)
         VALUES
-            ("name",  1, "Groceries"),
-            ("category_id",  0, "category_id"),
-            ("amount",  0, "$200")
+            ("account",  1, "Groceries"),
+            ("category_id",  2, "category_id"),
+            ("amount",  3, "$200")
     """
 
 # Add more table classes here...

@@ -2,27 +2,27 @@
 
 ## Addressing Relevant Implications
 
-### NAME OF IMPLICATION 1
+### NAME OF IMPLICATION 1 End-User
 
 Replace this text with notes about what you did during the project to address the implication - design features, etc.
 
 
-### NAME OF IMPLICATION 2
+### Functionality
 
 Replace this text with notes about what you did during the project to address the implication - design features, etc.
 
 
-### NAME OF IMPLICATION 3
+### Usability
 
 Replace this text with notes about what you did during the project to address the implication - design features, etc.
 
 
-### NAME OF IMPLICATION 4
+### Aesthetics
 
 Replace this text with notes about what you did during the project to address the implication - design features, etc.
 
 
-### NAME OF IMPLICATION 5
+### Social
 
 Replace this text with notes about what you did during the project to address the implication - design features, etc.
 
