@@ -23,7 +23,7 @@ app = Flask(__name__)
 #-----------------------------------------------------------
 # Home page - Show all accounts
 #-----------------------------------------------------------
-@app.get("/accounts")
+@app.get("/")
 def show_accounts():
     with connect_db() as db:
         sql = """

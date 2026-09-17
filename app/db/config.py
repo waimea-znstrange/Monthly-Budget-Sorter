@@ -15,29 +15,49 @@
 #     SEED_DATA = "INSERT INTO name (...)" or None
 #----------------------------------------------------------------------------
 
-class AccountTable:
+class CatTable:
 
-    NAME = "account"
+    NAME = "categories"
 
     SCHEMA = """
-        CREATE TABLE account (
-            id      BIGINT,
-            date    TEXT,
-            category_id    INTEGER,
-            name    TEXT,
-            amount  INTEGER
+        CREATE TABLE categories (
+            id      INTEGER PRIMARY KEY AUTOINCREMENT,
+            name    TEXT NOT NULL,
+            notes   TEXT,
+            budget  INTEGER DEFAULT 0
         )
     """
 
     SEED_DATA = """
-        INSERT INTO account (name, category_id, amount)
+        INSERT INTO categories (name, notes, budget)
         VALUES
-            ("account",  1, "Groceries"),
-            ("category_id",  2, "category_id"),
-            ("amount",  3, "$200")
+            ("Food", "", 200),
+            ("Fun", "", 100)
     """
 
-# Add more table classes here...
+class SpendTable:
+
+    NAME = "spending"
+
+    SCHEMA = """
+        CREATE TABLE spending (
+            id      INTEGER PRIMARY KEY AUTOINCREMENT,
+            date    TEXT NOT NULL,
+            cat_id  INTEGER NOT NULL,
+            name    TEXT NOT NULL,
+            amount  INTEGER DEFAULT 0,
+
+            FOREIGN KEY (cat_id) REFERENCES categories(id)
+        )
+    """
+
+    SEED_DATA = """
+        INSERT INTO spending (date, cat_id, name, amount)
+        VALUES
+            ("2026-09-01", 1, "Lunch at Maccas", 20),
+            ("2026-09-01", 2, "Bet of the horses", 50)
+    """
+
 
 
 
@@ -57,7 +77,7 @@ class AccountTable:
 #----------------------------------------------------------------------------
 
 TABLES = [
-    AccountTable,
-    # Add more tables here...
+    CatTable,
+    SpendTable,
 ]
 
