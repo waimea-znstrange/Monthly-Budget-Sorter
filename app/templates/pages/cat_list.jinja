@@ -7,28 +7,24 @@
 
 {% block content %}
 
-    <h2>Accounts</h2>
+    <h2>Categories</h2>
 
     <section id="accounts">
 
-        {% for account in accounts %}
+        {% for cat in cat_data %}
 
             <div class="account">
 
                 <header>
-                    <h3>{{ account.title }}</h3>
+                    <h3>{{ cat.name }}</h3>
                 </header>
 
-                <p>{{ account.body | paragraphs }}</p>
-
-                <footer>
-                </footer>
-
+                <p>Total: ${{ cat.total }}</p>
             </div>
 
         {% else %}
 
-            <p>No Accounts!</p>
+            <p>No Categories!</p>
 
         {% endfor %}
 

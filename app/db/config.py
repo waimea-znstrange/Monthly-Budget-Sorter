@@ -44,7 +44,7 @@ class SpendTable:
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
             date    TEXT NOT NULL,
             cat_id  INTEGER NOT NULL,
-            name    TEXT NOT NULL,
+            reason  TEXT NOT NULL,
             amount  INTEGER DEFAULT 0,
 
             FOREIGN KEY (cat_id) REFERENCES categories(id)
@@ -52,10 +52,12 @@ class SpendTable:
     """
 
     SEED_DATA = """
-        INSERT INTO spending (date, cat_id, name, amount)
+        INSERT INTO spending (date, cat_id, reason, amount)
         VALUES
             ("2026-09-01", 1, "Lunch at Maccas", 20),
-            ("2026-09-01", 2, "Bet of the horses", 50)
+            ("2026-09-01", 2, "Bet of the horses", 50),
+            ("2026-09-02", 1, "Lunch at KFC", 20),
+            ("2026-09-02", 2, "Bet of the horses", 30)
     """
 
 

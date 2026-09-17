@@ -27,12 +27,19 @@ app = Flask(__name__)
 def show_accounts():
     with connect_db() as db:
         sql = """
-            SELECT id, date, category_id, name, amount
-            FROM account
-            ORDER BY name DESC
+            SELECT 
+                categories.name,
+                SUM(spending.amount) AS total
+
+            FROM categories
+            JOIN spending ON spending.cat_id = categories.id
+
+            GROUP BY categories.name
+            
+            ORDER BY name ASC
         """
         params = ()
-        accounts = db.execute(sql, params).fetchall()
+        cat_data = db.execute(sql, params).fetchall()
 
         # flash("Test message")
         # flash("Test SUCCESS message", "success")
@@ -40,7 +47,7 @@ def show_accounts():
         # flash("Test WARNING message", "warning")
         # flash("Test ERROR message", "error")
 
-        return render_template("pages/account_list.jinja", accounts=accounts)
+        return render_template("pages/cat_list.jinja", cat_data=cat_data)
 
 
 #-----------------------------------------------------------
