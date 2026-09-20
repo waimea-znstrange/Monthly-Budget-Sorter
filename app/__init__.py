@@ -24,7 +24,7 @@ app = Flask(__name__)
 # Home page - Show all accounts
 #-----------------------------------------------------------
 @app.get("/")
-def show_accounts():
+def show_categories():
     with connect_db() as db:
         sql = """
             SELECT 
@@ -62,16 +62,16 @@ def show_timeline():
             ORDER BY name DESC
         """
         params = ()
-        accounts = db.execute(sql, params).fetchall()
+        categories = db.execute(sql, params).fetchall()
 
-        return render_template("pages/timeline.jinja", accounts=accounts)
+        return render_template("pages/timeline.jinja", cat_data=cat_data)
 
 
 #-----------------------------------------------------------
-# Add account - Add account page
+# Add category - Add categories page
 #-----------------------------------------------------------
-@app.get("/add_account")
-def add_account():
+@app.get("/add_cat")
+def add_categories():
     with connect_db() as db:
         sql = """
             SELECT id, date, category_id, name, amount
@@ -79,9 +79,9 @@ def add_account():
             ORDER BY name DESC
         """
         params = ()
-        accounts = db.execute(sql, params).fetchall()
+        categories = db.execute(sql, params).fetchall()
 
-        return render_template("pages/add_account.jinja", accounts=accounts)
+        return render_template("pages/add_cat.jinja", cat_data=cat_data)
 
 
 #===========================================================

@@ -7,19 +7,19 @@
 
 {% block content %}
 
-    <h2>Add Account</h2>
+    <h2>Add a category</h2>
 
-    <section id="add_accounts">
+    <section id="add_categories">
 
-        {% for account in accounts %}
+        {% for cat in cat_data %}
 
-            <div class="add_account">
+            <div class="add_cat">
 
                 <header>
-                    <h3>{{ add_account.title }}</h3>
+                    <h3>{{ add_cat.title }}</h3>
                 </header>
 
-                <p>{{ add_account.body | paragraphs }}</p>
+                <p>{{ add_cat.body | paragraphs }}</p>
 
                 <footer>
                 </footer>
@@ -28,7 +28,7 @@
 
         {% else %}
 
-            <p>No Accounts!</p>
+            <p>No categories!</p>
 
         {% endfor %}
 
