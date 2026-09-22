@@ -13,13 +13,14 @@
 
         {% for cat in cat_data %}
 
-            <div class="cat">
+            <div class="cat_data">
 
                 <header>
                     <h3>{{ cat.name }}</h3>
                 </header>
 
                 <p>Total: ${{ cat.total }}</p>
+
             </div>
 
         {% else %}

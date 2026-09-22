@@ -37,6 +37,8 @@ main {
 }
 
 
+
+
 /* Header & Nav -----------------------------------------------*/
 
 body > header {
@@ -45,6 +47,10 @@ body > header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+
+    .icon {
+        max-width: 5rem;
+    }
 
     nav {
         display: flex;
@@ -56,7 +62,6 @@ body > header {
     }
 }
 
-
 /* Page Headings -----------------------------------------------*/
 
 main > h2 {
@@ -65,6 +70,20 @@ main > h2 {
     margin-block: 2rem;
 }
 
+/* category list -----------------------------------------------*/
+
+.cat_data {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+    box-shadow: #111;
+}
 
 /* Notes --------------------------------------------------*/
 
