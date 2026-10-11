@@ -20,10 +20,27 @@ app = Flask(__name__)
 # App Routes Handlers
 #===========================================================
 
+
 #-----------------------------------------------------------
-# Home page - Show all accounts
+# Menu page - Greeting
 #-----------------------------------------------------------
 @app.get("/")
+def show_menu():
+
+        flash("Test message")
+        flash("Test SUCCESS message", "success")
+        flash("Test INFO message", "info")
+        flash("Test WARNING message", "warning")
+        flash("Test ERROR message", "error")
+
+        params = ()
+        cat_data = db.execute(sql, params).fetchall()
+
+
+#-----------------------------------------------------------
+# Home page - Show all categories
+#-----------------------------------------------------------
+@app.get("/cat_list")
 def show_categories():
     with connect_db() as db:
         sql = """
@@ -41,12 +58,6 @@ def show_categories():
         params = ()
         cat_data = db.execute(sql, params).fetchall()
 
-        # flash("Test message")
-        # flash("Test SUCCESS message", "success")
-        # flash("Test INFO message", "info")
-        # flash("Test WARNING message", "warning")
-        # flash("Test ERROR message", "error")
-
         return render_template("pages/cat_list.jinja", cat_data=cat_data)
 
 
@@ -57,14 +68,18 @@ def show_categories():
 def show_timeline():
     with connect_db() as db:
         sql = """
-            SELECT id, date, category_id, name, amount
-            FROM account
-            ORDER BY name DESC
+            SELECT
+                spending.date,
+                spending.amount
+
+            FROM spending
+
+            ORDER BY spending.date ASC
         """
         params = ()
-        categories = db.execute(sql, params).fetchall()
+        timeline = db.execute(sql, params).fetchall()
 
-        return render_template("pages/timeline.jinja", cat_data=cat_data)
+        return render_template("pages/timeline.jinja", timeline=timeline)
 
 
 #-----------------------------------------------------------
@@ -74,12 +89,10 @@ def show_timeline():
 def add_categories():
     with connect_db() as db:
         sql = """
-            SELECT id, date, category_id, name, amount
-            FROM account
-            ORDER BY name DESC
+            SELECT
         """
         params = ()
-        categories = db.execute(sql, params).fetchall()
+        cat_data = db.execute(sql, params).fetchall()
 
         return render_template("pages/add_cat.jinja", cat_data=cat_data)
 

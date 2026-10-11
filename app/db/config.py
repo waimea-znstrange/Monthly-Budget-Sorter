@@ -55,9 +55,9 @@ class SpendTable:
         INSERT INTO spending (date, cat_id, reason, amount)
         VALUES
             ("2026-09-01", 1, "Lunch at Maccas", 20),
-            ("2026-09-01", 2, "Bet of the horses", 50),
-            ("2026-09-02", 1, "Lunch at KFC", 20),
-            ("2026-09-02", 2, "Bet of the horses", 30)
+            ("2026-09-01", 2, "Bet on the horses", 50),
+            ("2026-09-02", 1, "Lunch at KFC", 15),
+            ("2026-09-02", 2, "Bet on the horses", 30)
     """
 
 
