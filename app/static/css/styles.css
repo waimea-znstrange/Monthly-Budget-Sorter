@@ -116,3 +116,14 @@ main > h2 {
     }
 }
 
+.add-cat_button {
+    padding-top: 20px;
+    float: right;
+    margin-right: 5rem;
+}
+
+.timeline_button {
+    padding-top: 20px;
+    float: left;
+    margin-left: 5rem;
+}
