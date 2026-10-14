@@ -83,18 +83,48 @@ def show_timeline():
 
 
 #-----------------------------------------------------------
-# Add category - Add categories page
+# Get Category Form - Add categories page
 #-----------------------------------------------------------
 @app.get("/add_cat")
 def add_categories():
     with connect_db() as db:
         sql = """
             SELECT
+                categories.name,
+                categories.notes,
+                categories.budget
+
+            FROM categories
+
+            ORDER BY categories.name ASC
         """
         params = ()
         cat_data = db.execute(sql, params).fetchall()
 
         return render_template("pages/add_cat.jinja", cat_data=cat_data)
+
+
+#-----------------------------------------------------------
+# Post Category form - Add categories page
+#-----------------------------------------------------------
+@app.post("/add_cat")
+def post_categories():
+    with connect_db() as db:
+        sql = """
+            SELECT
+                categories.name,
+                categories.notes,
+                categories.budget
+
+            FROM categories
+
+            ORDER BY categories.name ASC
+        """
+        params = ()
+        cat_data = db.execute(sql, params).fetchall()
+
+        return render_template("pages/add_cat.jinja", cat_data=cat_data)
+
 
 
 #===========================================================
