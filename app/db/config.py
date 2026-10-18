@@ -31,8 +31,8 @@ class CatTable:
     SEED_DATA = """
         INSERT INTO categories (name, notes, budget)
         VALUES
-            ("Food", "", 200),
-            ("Fun", "", 100)
+            ("Food", "Dont buy junk food!", 200),
+            ("Fun", "Gambling doesn't count as fun.", 100)
     """
 
 class SpendTable:

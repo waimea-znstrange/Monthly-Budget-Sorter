@@ -4,46 +4,48 @@
 
 {% extends 'pages/_base.jinja' %}
 
+{% block content %}
 
-<label for="budget">Budget:</label>
-        <input
-            type="number"
-            id="budget"
-            name="budget"
-            min="0"
-            value="0"
-            required
-        >
+    <label for="budget">Budget:</label>
+            <input
+                type="number"
+                id="budget"
+                name="budget"
+                min="0"
+                value="0"
+                required
+            >
 
-        <br><br>
+            <br><br>
 
-        <button type="submit">Add Category</button>
+            <button type="submit">Add Category</button>
 
-    </form>
+        </form>
 
-    <hr>
+         <hr>
 
-    <h2>Existing Categories</h2>
+        <h2>Existing Categories</h2>
 
-    <section id="add_categories">
+        <section id="add_categories">
 
-        {% for cat in cat_data %}
+            {% for cat in cat_data %}
 
-            <div class="add_cat">
-                <header>
-                    <h3>{{ cat.name }}</h3>
-                </header>
+                <div class="add_cat">
+                    <header>
+                        <h3>{{ cat.name }}</h3>
+                    </header>
 
-                <p>{{ cat.notes }}</p>
-                <p>Budget: {{ cat.budget }}</p>
-            </div>
+                    <p>Budget: ${{ cat.budget }}</p>
+                    <p>Notes: {{ cat.notes }}</p>
+                    
+                </div>
 
-        {% else %}
+            {% else %}
 
-            <p>No categories!</p>
+                <p>No categories!</p>
 
-        {% endfor %}
+            {% endfor %}
 
-    </section>
+        </section>
 
 {% endblock %}
