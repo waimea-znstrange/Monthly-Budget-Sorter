@@ -85,6 +85,21 @@ main > h2 {
     box-shadow: #111;
 }
 
+/* timeline ----------------------------------------------------*/
+
+.timeline {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+    box-shadow: #111;
+}
+
 /* Notes --------------------------------------------------*/
 
 #notes {

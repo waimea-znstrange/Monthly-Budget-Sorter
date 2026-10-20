@@ -46,7 +46,8 @@ def show_categories():
         sql = """
             SELECT 
                 categories.name,
-                SUM(spending.amount) AS total
+                categories.budget,
+                SUM(spending.amount) [- budget] AS total
 
             FROM categories
             JOIN spending ON spending.cat_id = categories.id
@@ -70,6 +71,7 @@ def show_timeline():
         sql = """
             SELECT
                 spending.date,
+                spending.reason,
                 spending.amount
 
             FROM spending
@@ -77,9 +79,9 @@ def show_timeline():
             ORDER BY spending.date ASC
         """
         params = ()
-        timeline = db.execute(sql, params).fetchall()
+        cat_data = db.execute(sql, params).fetchall()
 
-        return render_template("pages/timeline.jinja", timeline=timeline)
+        return render_template("pages/timeline.jinja", cat_data=cat_data)
 
 
 #-----------------------------------------------------------

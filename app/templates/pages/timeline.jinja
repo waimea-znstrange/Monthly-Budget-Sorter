@@ -11,16 +11,17 @@
 
     <section id="timeline">
 
-        {% for cat in cat_data %}
+        {% for spending in cat_data %}
 
             <div class="timeline">
 
                 <header>
-                    <h3>{{ timeline.title }}</h3>
+                    <h3>{{ Timeline }}</h3>
                 </header>
 
-                <p>{{ spending.date }}</p>
-                <p>{{ timeline.body | paragraphs }}</p>
+                    <p>{{ spending.date }}</p>
+                    <p>{{ spending.reason }}</p>
+                    <p>${{ spending.amount }}</p>
 
                 <footer>
                 </footer>
