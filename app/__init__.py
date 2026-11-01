@@ -47,14 +47,15 @@ def show_categories():
             SELECT 
                 categories.name,
                 categories.budget,
-                SUM(spending.amount) [- budget] AS total
+                COALESCE(SUM(spending.amount), 0) AS total_spent,
+                categories.budget - COALESCE(SUM(spending.amount), 0) AS total
 
             FROM categories
-            JOIN spending ON spending.cat_id = categories.id
+            LEFT JOIN spending ON spending.cat_id = categories.id
 
-            GROUP BY categories.name
-            
-            ORDER BY name ASC
+            GROUP BY categories.id, categories.name, categories.budget
+
+            ORDER BY categories.name ASC
         """
         params = ()
         cat_data = db.execute(sql, params).fetchall()

@@ -19,9 +19,9 @@
                     <h3>{{ cat.name }}</h3>
                 </header>
 
-                <p>Budget: ${{ cat.budget }}</p>
-                <p>Total: ${{ cat.total }}</p>
-                <p>Notes: {{ cat.notes }}</p>
+                <p>Budget: ${{ cat["budget"] }}</p>
+                <p>Total spent: ${{ cat["total_spent"] }}</p>
+                <p>Remaining: ${{ cat["total"] }}</p>
 
                 <footer>
                 </footer>
