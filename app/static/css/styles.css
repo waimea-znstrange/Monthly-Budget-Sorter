@@ -1,6 +1,6 @@
 /*===========================================================
-  PROJECT NAME HERE
-  By YOUR NAME HERE
+  PROJECT Monthly Budget Sorter
+  By Zeb Strange
 ===========================================================*/
 
 :root {
@@ -100,9 +100,17 @@ main > h2 {
     box-shadow: #111;
 }
 
-/* timeline ----------------------------------------------------*/
+/* add category ----------------------------------------------------*/
+
+.label {
+    padding-top: 20px;
+    flex: left;
+    float: left;
+    margin-left: 5rem;
+}
 
 .add_cat {
+    padding: 1rem;
 }
 
 /* menu ----------------------------------------------------*/
@@ -141,6 +149,8 @@ main > h2 {
         }
     }
 }
+
+
 
 .add-cat_button {
     background-color: white;
