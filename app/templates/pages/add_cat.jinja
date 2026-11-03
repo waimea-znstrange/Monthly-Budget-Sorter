@@ -1,10 +1,19 @@
 {#=====================================================
-  Home page
+  Add category page
 =====================================================#}
 
 {% extends 'pages/_base.jinja' %}
 
 {% block content %}
+
+    <label for="name">Category Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e.g. Food"
+            required
+        >
 
     <label for="budget">Budget: $</label>
             <input
@@ -15,6 +24,13 @@
                 value="0"
                 required
             >
+
+    <label for="notes">Notes:</label>
+        <textarea
+            id="notes"
+            name="notes"
+            placeholder="Enter category notes..."
+        ></textarea>
 
             <br><br>
 

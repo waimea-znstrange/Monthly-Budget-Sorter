@@ -33,9 +33,9 @@ def show_menu():
         flash("Test WARNING message", "warning")
         flash("Test ERROR message", "error")
 
-        params = ()
-        cat_data = db.execute(sql, params).fetchall()
+        
 
+        return render_template("pages/menu.jinja")
 
 #-----------------------------------------------------------
 # Home page - Show all categories
