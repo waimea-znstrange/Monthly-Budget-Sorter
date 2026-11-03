@@ -6,5 +6,5 @@ services:
     volumes:
       - .:/app        # live-reloads code changes without rebuilding
     env_file:
-      - .env          # picks up the existing .env file automatically
+      - .env          # local configuration; ignored by Git
     tty: true         # Enable colour output
